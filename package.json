@@ -1,0 +1,41 @@
+{
+  "name": "node_express",
+  "version": "1.0.0",
+  "description": "Demo API REST with nodejs and express",
+  "engines": {
+    "node": "8.15.0",
+    "npm": "6.4.1",
+    "yarn": "1.12.3"
+  },
+  "main": "./server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.1",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "heroku-prebuild": "sed -i '/\"dev\"/d' ./package.json",
+    "dev": "nodemon ./server.js",
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexanderhuayama/node_express.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Alexander Huayama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderhuayama/node_express/issues"
+  },
+  "homepage": "https://node-express-2018.herokuapp.com/api/"
+}
